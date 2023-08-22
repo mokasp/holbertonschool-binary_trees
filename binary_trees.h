@@ -46,6 +46,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 bool isPerfect(const binary_tree_t *tree, int depth, int level);
 int findDepth(const binary_tree_t *tree);
 bool wrapPerf(const binary_tree_t *tree);
-binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+binary_tree_t *binary_tree_sibling(const binary_tree_t *node);
+binary_tree_t *binary_tree_uncle(const binary_tree_t *node);
 
 #endif
