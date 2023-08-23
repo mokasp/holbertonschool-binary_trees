@@ -9,6 +9,8 @@ binary_tree_t *binary_tree_uncle(const binary_tree_t *node)
 		return (0);
 	
 	parentNode = node->parent;
+	if (parentNode == NULL)
+		return (NULL);
 	key = parentNode->n;
 	gParentNode = parentNode->parent;
 	if (gParentNode == NULL || gParentNode->left == NULL || gParentNode->right == NULL)
