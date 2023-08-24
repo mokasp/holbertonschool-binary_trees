@@ -1,5 +1,11 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_sibling - find a nodes sibling node
+ * @node: node to check
+ *
+ * Return: sibling node on success, null on failure
+ */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	binary_tree_t *parentNode, *leftNode, *rightNode, *siblingNode;
